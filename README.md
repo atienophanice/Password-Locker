@@ -6,3 +6,7 @@ This is an application that generates different passwords for different accounts
 it is run by using short cut  keys as directed in the terminal to input and also to display users information
 ### Requirements
 python3.6 installed
+### Set-up installation
+Clone the repo<br>
+Install python3.6<br>
+On the terminal run.py<br>

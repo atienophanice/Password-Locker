@@ -29,7 +29,7 @@ save_users(create_users(identity,user_name,password))
         print(f"New User{identity}{user_name} created")
         print('/n')
 
-                     # elif short_code=='du':
+  elif short_code=='du':
         print("Here is a list of all users")
      print('/n')
 

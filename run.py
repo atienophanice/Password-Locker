@@ -6,74 +6,74 @@ import time
 import pyperclip
 def main():
         print("Hello welcome to your user list.what is your name?")
-user_name=input()
-print (f"Hello{user_name}.What would you like to do?")
-print("/n")
-while True:
-        print ("use these short codes:cu-create new user name,du-display user name,fu-find user.ex-exit the user list")
-        short_code=input().lower()
-        if short_code=='cu':
-         print("New User")
-         print("_"*10)
-         print("identity...")
-         identity=input()
-
-        print("username")
-        user_name=input()
-
-        print("password")
-        password=input()
-save_users(create_users(identity,user_name,password))
-
-        print('/n')
-        print(f"New User{identity}{user_name} created")
-        print('/n')
-
-                     # elif short_code=='du':
-        print("Here is a list of all users")
-        print('/n')
-
-for password in display ():
-
-       print(f"{credential.identity} {credential.user_name}{credentila.password})
-       print('/n')
-               else:
-       print('/n')
-
-       print("You dont have a user name")
-       print('/n')
-
-                elif: short code =='fu':
-      print ("Enter the user name")
-search_user=input()
-if check_existing_user(serch_user)
-
-
-     print(f"{search_user.user_name}")
-     print('_'*8)
-     print(f"password.....{search_users.password}")
-     print(f"identity....{search_user.identity}")
-else;
-    print("The user does not exist")
-elif "ex" == short_code:
-    print("Bye .......")
-break
- else:
-print("I really didn't get that. Please use the short codes")
-
-if __name__ == '__main__':
-
-    main()
-
-
-
-
-
-
-
-
-
-
+# user_name=input()
+# print (f"Hello{user_name}.What would you like to do?")
+# print("/n")
+# while True:
+#         print ("use these short codes:cu-create new user name,du-display user name,fu-find user.ex-exit the user list")
+#         short_code=input().lower()
+#         if short_code=='cu':
+#          print("New User")
+#          print("_"*10)
+#          print("identity...")
+#          identity=input()
+#
+#         print("username")
+#         user_name=input()
+#
+#         print("password")
+#         password=input()
+# save_users(create_users(identity,user_name,password))
+#
+#         print('/n')
+#         print(f"New User{identity}{user_name} created")
+#         print('/n')
+#
+#                      # elif short_code=='du':
+#         print("Here is a list of all users")
+#         print('/n')
+#
+# for password in display ():
+#
+#        print(f"{credential.identity} {credential.user_name}{credentila.password})
+#        print('/n')
+#                else:
+#        print('/n')
+#
+#        print("You dont have a user name")
+#        print('/n')
+#
+#                 elif: short code =='fu':
+#       print ("Enter the user name")
+# search_user=input()
+# if check_existing_user(serch_user)
+#
+#
+#      print(f"{search_user.user_name}")
+#      print('_'*8)
+#      print(f"password.....{search_users.password}")
+#      print(f"identity....{search_user.identity}")
+# else;
+#     print("The user does not exist")
+# elif "ex" == short_code:
+#     print("Bye .......")
+# break
+#  else:
+# print("I really didn't get that. Please use the short codes")
+#
+# if __name__ == '__main__':
+#
+#     main()
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
 #
 # def create_user(identity,user_name, password):

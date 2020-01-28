@@ -35,29 +35,17 @@ def test_save_credential(self):
 
         self.assertEqual( len(Credential.credential_list), 1 )
 
-def test_save_multiple_credential(self):
-        '''
-        Test case to test if you can save multiple objects to credential list
-        '''
-
-        # Save the new credential
-        self.new_credential.save_credential()
-
-        test_cred = Credential("phannie","Facebook","facebook4")
-
-        test_cred.save_credentials()
-
-        self.assertEqual( len(Credential.credentials_list), 2)
 
 def test_generate_password(self):
         '''
         Test case to test if a user can log into their credentials
         '''
-        
+
         generated_password = self.new_credential.generate_password()
 
-        self.assertEqual( len(generated_password), 8 )   
-    
+        self.assertEqual( len(generated_password), 8 )
+
+
 def test_display_credential(self):
         '''
         Test case to test if a user can see a list of all the credentials saved
@@ -66,18 +54,18 @@ def test_display_credential(self):
         # Save the new credential
         self.new_credential.save_credential()
 
-        test_credential = Credential("phannie","gmail","atienophanice")
+        test_credential = Credential("Phannie","gmail","atienophanice1")
 
         test_credential.save_credential()
 
         test_credential = Credential("phannie","gmail","atienophanice1")
 
         test_credential.save_credential()
-        
+
         self.assertEqual(len(Credential.display_credential("phannie"),2))
-        
+
 def test_credential_exist(self):
-        
+
         '''
         Test to check if we can return a boolean if we can't find the credential
         '''
@@ -88,25 +76,26 @@ def test_credential_exist(self):
         test_credential = Credential("phannie","atienophanice","gmail")
 
         test_credential.save_credential()
-        
+
         # use contact exist method
         credential_exists = Credential.credential_exist("Gmail")
-        
-        self.assertTrue(credential_exists)
-        
+
+        self.assertTcrue(credential_exists)
+
+
 class TestUsersData(unittest.TestCase):
     def setUp(self):
         '''
         Setting up the structure before each test
         '''
         self.new_data = UsersData(1,1,"facebook.com","phannie")
-    
+
     def tearDown(self):
-        ''' 
+        '''
         Cleans up the test after test is complete
         '''
         UsersData.data_list = []
-    
+
     def test_init(self):
         '''
         Test case to evaluate if the case has been initialized properly
@@ -133,7 +122,7 @@ class TestUsersData(unittest.TestCase):
 
         data_found = UsersData.display_data(1,1)
         self.assertEqual(data_found.website,test_data.website)
-    
+
     def test_data_exists(self):
         '''
         Testing to check if the function for checking data works well
@@ -144,7 +133,7 @@ class TestUsersData(unittest.TestCase):
 
         data_exists = UsersData.existing_data(1)
         self.assertTrue(data_exists)
-    
+
     def test_copy_password(self):
         '''
         Testing if the copy password function works
